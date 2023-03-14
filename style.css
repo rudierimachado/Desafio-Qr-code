@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+/*Esta linha importa a fonte 'Outfit' do Google Fonts com os pesos 400 e 700 para ser usada no documento.*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Esta linha define que todos os elementos no documento terão margem e preenchimento iguais a 0 e utilizarão a caixa de modelo "border-box".*/
+
+
+:root {
+  --bg-color: hsl(212, 45%, 89%);
+  --text-color: hsl(220, 15%, 55%);
+  --title-color: hsl(218, 44%, 22%);
+}
+/*Esta linha define as variáveis CSS (variáveis personalizadas) que podem ser usadas no documento. 
+Isso permite que a cor de fundo, cor do texto e cor do título sejam facilmente atualizadas a partir de um único local.*/
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  font-family: 'Outfit', sans-serif;
+}
+/*Esta linha define as propriedades de estilo para o elemento body. Define que o tamanho do body será igual ao tamanho da 
+tela (100vw e 100vh), a cor de fundo será a variável CSS definida anteriormente e a fonte usada será a fonte importada do Google Fonts.*/
+
+
+main {
+  width: 100%;
+  height: calc(100% - 3.3125rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Define que o elemento main ocupará 100% da largura do contêiner pai, a altura será calculada 
+subtraindo 3.3125rem da altura total da tela. 
+O elemento main será centralizado horizontal e verticalmente usando a propriedade display:flex e as propriedades justify-content e align-items.*/
+
+
+img {
+  width: 100%;
+}
+/*define que todas as imagens no documento ocuparão 100% da largura do contêiner pai.*/
+
+
+
+.qr-code {
+  width: 20rem;
+  height: 31.0625rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+/* Define a largura e a altura do elemento, define a cor de fundo como branco, adiciona
+ um preenchimento de 1rem, um raio de borda de 1rem e centraliza o conteúdo horizontalmente com a propriedade text-align.*/
+
+
+.qr-code__image {
+  border-radius: .5rem;
+}
+/*Define um raio de borda de 0,5rem.*/
+
+
+
+.qr-code__title {
+  font-size: 1.375rem; /* Define o tamanho da fonte como 1.375 vezes o tamanho padrão (rem) */
+  font-weight: 700; /* Define o peso da fonte como negrito */
+  color: var(--title-color); /* Define a cor do texto usando uma variável de cor chamada "--title-color" */
+  margin-top: 1.375rem; /* Define a margem superior como 1.375 vezes o tamanho padrão (rem) */
+  margin-bottom: .9375rem; /* Define a margem inferior como 0.9375 vezes o tamanho padrão (rem) */
+}
+
+
+
+
+.qr-code__description {
+  width: 15.375rem; /* Define a largura do elemento como 15.375 vezes o tamanho padrão (rem) */
+  font-size: .9375rem; /* Define o tamanho da fonte como 0.9375 vezes o tamanho padrão (rem) */
+  font-weight: 400; /* Define o peso da fonte como normal */
+  color: var(--text-color); /* Define a cor do texto usando uma variável de cor chamada "--text-color" */
+  margin: 0 auto; /* Define as margens superior e inferior como 0 e a margem esquerda e direita como automática, alinhando o elemento no centro horizontalmente */
+}
+
+
+
+
+
+.footer {
+  padding: .625rem 0; /* Define o preenchimento superior e inferior como 0.625 vezes o tamanho padrão (rem) e o preenchimento esquerdo e direito como 0 */
+  color: var(--title-color); /* Define a cor do texto usando uma variável de cor chamada "--title-color" */
+}
+
+
+
+
+.footer__text {
+  display: block; /* Define o elemento como um bloco, fazendo com que ele ocupe todo o espaço horizontal disponível */
+  font-size: .6875rem; /* Define o tamanho da fonte como 0.6875 vezes o tamanho padrão (rem) */
+  text-align: center; /* Define o alinhamento do texto como centralizado */
+  line-height: 150%; /* Define a altura da linha como 150% do tamanho da fonte, criando um espaçamento entre as linhas */
+}
+
+
+.footer__link {
+  color: var(--title-color); /* Define a cor do link usando uma variável de cor chamada "--title-color" */
+}
